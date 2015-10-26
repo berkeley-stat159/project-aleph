@@ -2,4 +2,4 @@ test:
 	nosetests utils
 
 coverage:
-	nosetests --with-coverage utils
+	nosetests utils --with-coverage --cover-package=utils 
