@@ -24,11 +24,11 @@ So we use the tests to check that the results of our function are (still) as we
 expect.
 """
 # Python 3 compatibility
-from __future__ import print_function, division
+from __future__ import absolute_import, division, print_function
 
 import numpy as np
 
-import pearson
+from .. import pearson
 
 from numpy.testing import assert_almost_equal
 

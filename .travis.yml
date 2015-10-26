@@ -3,7 +3,7 @@ language: python
 
 env:
   global:
-    - DEPENDS="numpy scipy matplotlib"
+    - DEPENDS="requirements.txt"
     - COVERAGE=1
 
 python:
@@ -25,6 +25,7 @@ install:
 
 script:
   - make coverage
+
 
 after_success:
   - if [ "${COVERAGE}" == "1" ]; then coveralls; fi
