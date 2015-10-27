@@ -12,4 +12,4 @@ test:
 	nosetests code/utils data
 
 verbose:
-	nosetests code/utils data
+	nosetests -v code/utils data
